@@ -117,29 +117,12 @@
             download
             >Download Now</a
           >
-          <p>Downloads: <span id="downloadCount">0</span></p>
         </section>
     </div>
 
     <footer>
         <p>Ahmed Mostafa &copy; 2024. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Function to increment and display the download count
-        function updateDownloadCount() {
-            let downloadCount = localStorage.getItem('downloadCount') || 0;
-            downloadCount = parseInt(downloadCount, 10) + 1;
-            localStorage.setItem('downloadCount', downloadCount);
-            document.getElementById('downloadCount').textContent = downloadCount;
-        }
-
-        // Attach the function to the download button click event
-        document.querySelector('.download-button').addEventListener('click', updateDownloadCount);
-
-        // Initial display of the download count
-        document.getElementById('downloadCount').textContent = localStorage.getItem('downloadCount') || 0;
-    </script>
 </body>
 
 </html>
